@@ -38,7 +38,7 @@ module.exports = {
 
   collect: () => {
     Register.setDefaultLabels({
-      app: "node-app"
+      app: "kube-app"
     });
     Prometheus.collectDefaultMetrics({
       timeout: 5000
