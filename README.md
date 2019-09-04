@@ -1,4 +1,4 @@
-### What's the app for testing kubernetes
+### What's the app for testing kubernetes [![CircleCI](https://circleci.com/gh/wrasdf/kube-app/tree/master.svg?style=svg)](https://circleci.com/gh/wrasdf/kube-app/tree/master)
 - APIS in this app
   - GET     /metrics                --> will return prometheus nodejs metrics
   - GET     /health                 --> will retrun healthy status
@@ -15,7 +15,7 @@
 ### Shortcuts
 - $ make sh
 - $ make run
-- $ make push-v0.1.9
+- $ make push-v0.1.11
 
 #### Reference
 - https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html
