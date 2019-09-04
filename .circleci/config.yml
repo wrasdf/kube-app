@@ -1,0 +1,36 @@
+version: 2.1
+jobs:
+  e2e:
+    machine: true
+    steps:
+      - checkout
+      - run:
+          name: E2E Test
+          command: |
+            make run
+            make test
+
+  deploy:
+    machine: true
+    steps:
+      - checkout
+      - run:
+          name: Deploy to Docker Hub
+          command: |
+            echo ${DOCKER_PASSWORD} | base64 --decode | docker login -u $DOCKER_USER --password-stdin
+            make push-${CIRCLE_TAG}
+
+workflows:
+  version: 2
+  untagged-build:
+    jobs:
+      - e2e
+  tagged-build:
+    jobs:
+      - deploy:
+          context: Docker
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v.*/
