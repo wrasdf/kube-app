@@ -13,7 +13,7 @@ stop:
 
 run:
 	@docker-compose build node
-	@docker-compose run --rm -d -p 8080:8080 node
+	@docker-compose run --rm -d --service-ports node
 
 test:
 	./bin/e2e.sh
