@@ -2,6 +2,13 @@ const express = require('express')
 const router = express.Router()
 const log = require('simple-node-logger').createSimpleLogger()
 
+router.get('/timeout/:timeout', (request, response) => {
+  let timeoutMS = request.params.timeout
+  setTimeout(function(){
+    response.status(200).send(`{"status": "success", "data": "Response timeout ${timeoutMS}"}`)
+  }, timeoutMS);
+})
+
 router.get('/499', (request, response) => {
   try {
     throw new Error('499 Error');
