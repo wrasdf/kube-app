@@ -8,10 +8,10 @@
   - GET     /api/v1/499             --> will return 499 error
   - GET     /api/v1/largeresp       --> will return largeresp
   - GET     /s3/v1/list             --> list all the s3 bucket
-  - POST    /s3/v1/<bucket>         --> create s3 bucket in AWS
-  - PUT     /s3/v1/<bucket>/<key>   --> create key in s3 bucket
-  - DELETE  /s3/v1/<bucket>/<key>   --> delete key in s3 bucket
-  - DELETE  /s3/v1/<bucket>         --> delete s3 bucket in AWS
+  - POST    /s3/v1/<$bucket>         --> create s3 bucket in AWS
+  - PUT     /s3/v1/<$bucket>/<$key>   --> create key in s3 bucket
+  - DELETE  /s3/v1/<$bucket>/<$key>   --> delete key in s3 bucket
+  - DELETE  /s3/v1/<$bucket>         --> delete s3 bucket in AWS
 
 ### Shortcuts
 - $ make sh
