@@ -2,7 +2,7 @@
 - APIS in this app
   - GET     /metrics                --> will return prometheus nodejs metrics
   - GET     /health                 --> will retrun healthy status
-  - GET     /api/timeout/<timeout>  --> will timeout return response
+  - GET     /api/v1/timeout/<$timeout>  --> will timeout return response
   - GET     /api/v1/500             --> will return 500 error
   - GET     /api/v1/504             --> will return 504 error
   - GET     /api/v1/499             --> will return 499 error
