@@ -30,11 +30,11 @@ workflows:
   any-commit:
     jobs:
       - e2e
-  tagged-build:
+  released-build:
     jobs:
       - deploy:
           requires:
-            - e2e
+            - any-commit
           context: Docker
           filters:
             branches:
