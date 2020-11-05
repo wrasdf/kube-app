@@ -1,8 +1,7 @@
-
 ---
 version: 2.1
 jobs:
-  ut:
+  e2e:
     machine:
       image: ubuntu-2004:202010-01
       docker_layer_caching: true
@@ -28,12 +27,14 @@ jobs:
 
 workflows:
   version: 2
-  untagged-build:
+  any-commit:
     jobs:
       - e2e
   tagged-build:
     jobs:
       - deploy:
+          requires:
+            - e2e
           context: Docker
           filters:
             branches:
