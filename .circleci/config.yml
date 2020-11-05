@@ -33,8 +33,6 @@ workflows:
   released-build:
     jobs:
       - deploy:
-          requires:
-            - any-commit
           context: Docker
           filters:
             branches:
