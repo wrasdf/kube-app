@@ -15,6 +15,7 @@ router.get('/', (request, response) => {
     <style> body{padding: 20px} </style>
     <body>
       <h2> Kube Demo App With Metrics ------- ! </h2>
+      <h2> Version v0.1.15 </h2>
       <ul>
         <li> <b>GET</b>      /metrics               --> will return prometheus nodejs metrics </li>
         <li> <b>GET</b>      /health                --> will retrun healthy status </li>

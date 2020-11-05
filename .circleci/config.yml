@@ -1,7 +1,11 @@
+
+---
 version: 2.1
 jobs:
-  e2e:
-    machine: true
+  ut:
+    machine:
+      image: ubuntu-2004:202010-01
+      docker_layer_caching: true
     steps:
       - checkout
       - run:
@@ -11,7 +15,9 @@ jobs:
             make test
 
   deploy:
-    machine: true
+    machine:
+      image: ubuntu-2004:202010-01
+      docker_layer_caching: true
     steps:
       - checkout
       - run:
