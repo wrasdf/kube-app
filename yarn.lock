@@ -519,10 +519,10 @@ has-yarn@^2.1.0:
   resolved "https://registry.yarnpkg.com/has-yarn/-/has-yarn-2.1.0.tgz#137e11354a7b5bf11aa5cb649cf0c6f3ff2b2e77"
   integrity sha512-UqBRqi4ju7T+TqGNdqAO0PaSVGsDGJUBQvk9eUWNGRY1CFGDzYhLWoM7JQEemnlvVcv/YEmc2wNW8BC24EnUsw==
 
-helmet@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/helmet/-/helmet-4.1.0.tgz#6f3a34e8f18502d6e52518428b23aa4ddaf84b38"
-  integrity sha512-KWy75fYN8hOG2Rhl8e5B3WhOzb0by1boQum85TiddIE9iu6gV+TXbUjVC17wfej0o/ZUpqB9kxM0NFCZRMzf+Q==
+helmet@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/helmet/-/helmet-4.4.0.tgz#84532525b29bf32288c6c9cb3e3038af9a8aa958"
+  integrity sha512-TDBjY2QVTHGyHeyAC42ldgXC5Z0rZQT25/MhB4oKOkzXpseXVPpRv4nJLJOod6D4A/jvM/6IEO3f9Km9j0Yjug==
 
 http-cache-semantics@^4.0.0:
   version "4.1.0"
