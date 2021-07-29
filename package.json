@@ -9,7 +9,7 @@
   "author": "wrasdf@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.672.0",
+    "aws-sdk": "^2.956.0",
     "body-parser": "^1.19.0",
     "deepmerge": "^4.2.2",
     "express": "^4.17.1",
